@@ -33,3 +33,8 @@ job_loggers:
 loggers:
   - name: "STD_OUTPUT" # Same with above
     level: "INFO"
+
+metric:
+  enabled: true
+  path: /metrics
+  port: 9090
