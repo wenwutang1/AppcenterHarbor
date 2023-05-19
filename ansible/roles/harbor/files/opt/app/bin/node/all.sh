@@ -110,7 +110,7 @@ checkContainerHealthy() {
 duplicateDb() {
   rm -rf $dbMountDir/lost+found
   mkdir -p $dbMountDir/harbor-v2.4.3
-  mkdir -p $dbMountDir
+  mkdir -p $dbMountDir/back_up
   cp -r $dbMountDir/$oldVersion/* $dbMountDir/back_up/
   cp -r $dbMountDir/$oldVersion/* $dbMountDir/harbor-v2.4.3/
   chmod 700 $dbMountDir/harbor-v2.4.3/
